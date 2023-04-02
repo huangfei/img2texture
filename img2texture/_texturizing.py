@@ -129,7 +129,7 @@ class Mixer:
         return comp
 
 
-def img2tex(src: Path, dst: Path, pct=0.25):
+def img2tex(src: Path, dst: Path, pct=0.25, return_result: False):
     mixer1 = Mixer(Image.open(src), pct=pct)
     result = mixer1.make_seamless_h()
 
@@ -137,4 +137,7 @@ def img2tex(src: Path, dst: Path, pct=0.25):
     result = mixer2.make_seamless_v()
     if result.mode != "RGB":
         result = result.convert("RGB")
-    result.save(dst)
+    if return_result:
+        return result
+    else:
+        result.save(dst)
