@@ -75,7 +75,10 @@ Increasing the value makes the seam less visible. However, the image becomes sma
 *⚠️ If the images below are not displayed, check out the 
 [original of this document on GitHub](https://github.com/rtmigo/img2texture#readme).*
 
+  
 # Direct Usage
+  
+Direct usage with Ptyhon
 
 ```python
 from PIL import Image
