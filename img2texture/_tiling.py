@@ -23,7 +23,7 @@ def tile(source, target, horizontal = 3, vertical = 3, return_result = False) ->
     for x in range(horizontal):
         for y in range(vertical):
             new_im.paste(image, (w * x, h * y))
-    if return_image:
+    if return_result:
          return new_img
     else:
          new_im.save(target)
