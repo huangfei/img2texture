@@ -9,7 +9,7 @@ from ._common import Image  # importing with tweaked options
 def tile(source, target, horizontal = 3, vertical = 3, return_result = False) -> Image:
     """Merges multiple copies of `source` image into the `target` image
     side-by-side."""
-    if isinstance(image, Image.Image):
+    if isinstance(source, Image.Image):
          image = source
     else:
          image = Image.open(source)
