@@ -130,7 +130,7 @@ class Mixer:
 
 
 def img2tex(src, dst, pct=0.25, return_result=False):
-    if isinstance(image, Image.Image):
+    if isinstance(src, Image.Image):
          mixer1 = Mixer(src, pct=pct)
     else:
          mixer1 = Mixer(Image.open(src), pct=pct)
