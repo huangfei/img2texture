@@ -6,11 +6,13 @@ from pathlib import Path
 from ._common import Image  # importing with tweaked options
 
 
-def tile(source: Path, target: Path,
-         horizontal: int = 3, vertical: int = 3, return_image = False) -> Image:
+def tile(source, target, horizontal = 3, vertical = 3, return_image = False) -> Image:
     """Merges multiple copies of `source` image into the `target` image
     side-by-side."""
-    image = Image.open(source)
+    if isinstance(image, Image.Image):
+         image = source
+    else:
+         image = Image.open(source)
 
     w, h = image.size
     total_width = w * horizontal
