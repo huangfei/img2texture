@@ -61,8 +61,10 @@ from img2texture._tiling import tile
 image = Image.open('/content/input_.png')
 
 texture = img2tex(iamge, target=None, pct=0.5)
-
 tiled_texture = tile(texture, tile_filename(source), horizontal=2, vertical=2)
+
+texture.show()
+tiled_texture.show()
 ```
 
 
