@@ -3,7 +3,7 @@
 [![Generic badge](https://img.shields.io/badge/OS-Windows%20|%20macOS%20|%20Linux-blue.svg)](#)
 [![Downloads](https://pepy.tech/badge/img2texture/month)](https://pepy.tech/project/img2texture)
 
-# [img2texture](https://github.com/rtmigo/img2texture#readme)
+# img2texture - [original](https://github.com/rtmigo/img2texture#readme)
 
 Command line utility for converting images to seamless tiles.
 It overlays images with an alpha gradient.
