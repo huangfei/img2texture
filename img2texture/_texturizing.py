@@ -129,8 +129,11 @@ class Mixer:
         return comp
 
 
-def img2tex(src: Path, dst: Path, pct=0.25, return_result = False):
-    mixer1 = Mixer(Image.open(src), pct=pct)
+def img2tex(src, dst, pct=0.25, return_result=False):
+    if isinstance(image, Image.Image):
+         mixer1 = Mixer(src, pct=pct)
+    else:
+         mixer1 = Mixer(Image.open(src), pct=pct)
     result = mixer1.make_seamless_h()
 
     mixer2 = Mixer(result, pct=pct)
