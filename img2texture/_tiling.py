@@ -7,7 +7,7 @@ from ._common import Image  # importing with tweaked options
 
 
 def tile(source: Path, target: Path,
-         horizontal: int = 3, vertical: int = 3) -> None:
+         horizontal: int = 3, vertical: int = 3, return_image = False) -> Image:
     """Merges multiple copies of `source` image into the `target` image
     side-by-side."""
     image = Image.open(source)
@@ -21,5 +21,7 @@ def tile(source: Path, target: Path,
     for x in range(horizontal):
         for y in range(vertical):
             new_im.paste(image, (w * x, h * y))
-
-    new_im.save(target)
+    if return_image:
+         return new_img
+    else:
+         new_im.save(target)
