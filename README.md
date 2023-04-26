@@ -5,11 +5,10 @@
 
 # img2texture - [original](https://github.com/rtmigo/img2texture#readme)
 
-Command line utility for converting images to seamless tiles.
-It overlays images with an alpha gradient.
+This is a fork of the original img2texture for programmable usage as well as 
+CLI usage. 
 
 The resulting tiles can be used as textures in games, compositing and 3D modeling applications, etc.
-
 
 
 *⚠️ If the images below are not displayed, check out the 
@@ -36,14 +35,6 @@ The converted image can be tiled and panned in any
 direction. It will feel endless and seamless.
 
 # Install
-
-The easiest way is to download and extract a [binary executable](https://github.com/rtmigo/img2texture/releases):
-
-* [for macOS](https://github.com/rtmigo/img2texture/releases/latest/download/img2texture_darwin_amd64.tgz)
-* [for Linux](https://github.com/rtmigo/img2texture/releases/latest/download/img2texture_linux_amd64.tgz)
-* [for Windows](https://github.com/rtmigo/img2texture/releases/latest/download/img2texture_windows_amd64.zip)
-
-Or install as a Python package:
 
 ```bash
 pip install git+https://github.com/WASasquatch/img2texture.git
