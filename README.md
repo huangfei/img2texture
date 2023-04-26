@@ -46,7 +46,7 @@ The easiest way is to download and extract a [binary executable](https://github.
 Or install as a Python package:
 
 ```bash
-pip3 install img2texture
+pip3 install git+https://github.com/WASasquatch/img2texture.git
 ```
 
 ## Direct Usage
